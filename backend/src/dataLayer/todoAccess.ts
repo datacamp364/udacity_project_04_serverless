@@ -5,10 +5,10 @@
 import * as AWS from 'aws-sdk'
 //import * as AWSXRay from 'aws-xray-sdk'
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
-import { TodoUpdate } from '../../models/TodoUpdate'
-import { TodoItem } from '../../models/TodoItem'
-import { createLogger } from '../../utils/logger'
-import { getUserIdFromJWT } from '../utils'
+import { TodoUpdate } from '../models/TodoUpdate'
+import { TodoItem } from '../models/TodoItem'
+import { createLogger } from '../utils/logger'
+import { getUserIdFromJWT } from '../lambda/utils'
 
 const AWSXRay = require('aws-xray-sdk');
 

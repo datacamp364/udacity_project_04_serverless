@@ -9,15 +9,15 @@
 import * as uuid from 'uuid'
 
 // internal dependencies 
-import { TodoItem } from "../../models/TodoItem"
-import { TodoUpdate } from "../../models/TodoUpdate"
-import { CreateTodoRequest } from "../../requests/CreateTodoRequest"
-import { parseUserId } from "../../auth/utils"
-import { UpdateTodoRequest } from "../../requests/UpdateTodoRequest"
-import { TodoAccess } from "../helpers/todoAccess"
+import { TodoItem } from "../models/TodoItem"
+import { TodoUpdate } from "../models/TodoUpdate"
+import { CreateTodoRequest } from "../requests/CreateTodoRequest"
+import { parseUserId } from "../auth/utils"
+import { UpdateTodoRequest } from "../requests/UpdateTodoRequest"
+import { TodoAccess } from "../dataLayer/todoAccess"
 
 const todoAccess = new TodoAccess()
-import { getUploadUrl } from "./attachmentUtils"
+import { getUploadUrl } from "../dataLayer/attachmentUtils"
 
 const bucketName = process.env.ATTACHEMENT_S3_BUCKET;
 
